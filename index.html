@@ -60,21 +60,10 @@
             margin-top: 40px;
         }
 
-        .cta-button {
-            background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 1.2em;
-            margin-top: 30px;
-            transition: 0.3s ease;
-        }
-
-        .cta-button:hover {
-            transform: scale(1.05);
-            background: linear-gradient(90deg, #203a43, #2c5364, #0f2027);
+        .tableauPlaceholder {
+            width: 100%;
+            height: 700px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -91,12 +80,14 @@
             Dive into real-time data visualization powered by <strong>Tableau</strong>! Explore trends, compare regions, and understand your customers better – all at your fingertips. 🔥
         </p>
 
-        <h3>🌐 Open Dashboard</h3>
-        <p>Click the button below to view the full interactive dashboard on Tableau Public 🚀</p>
-
-        <a href="https://public.tableau.com/views/Book2_17434108008150/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
-            <button class="cta-button">📊 Open Dashboard</button>
-        </a>
+        <h3>🌐 Interactive Dashboard</h3>
+        <div class='tableauPlaceholder' id='vizContainer'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Dashboard' src='https://public.tableau.com/static/images/Book2_17434108008150/Dashboard1/1_rss.png' />
+                </a>
+            </noscript>
+        </div>
 
         <h3>✨ Why Tableau?</h3>
         <ul>
@@ -114,6 +105,21 @@
     <footer>
         Made with ❤️ and 📊 by Your Data Team | Powered by Tableau
     </footer>
+
+    <script type='text/javascript' src='https://public.tableau.com/javascripts/api/tableau-2.min.js'></script>
+    <script>
+        var containerDiv = document.getElementById("vizContainer");
+        var url = "https://public.tableau.com/views/Book2_17434108008150/Dashboard1";
+
+        var options = {
+            hideTabs: true,
+            onFirstInteractive: function () {
+                console.log("Tableau Dashboard loaded!");
+            }
+        };
+
+        var viz = new tableau.Viz(containerDiv, url, options);
+    </script>
 </body>
 
 </html>
