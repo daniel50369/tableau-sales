@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,20 +51,18 @@
             }
         }
 
-        iframe {
-            width: 100%;
-            height: 700px;
-            border: none;
-            border-radius: 12px;
-            margin-top: 20px;
-        }
-
         footer {
             text-align: center;
             padding: 10px;
             background: #203a43;
             color: white;
             margin-top: 40px;
+        }
+
+        .tableauPlaceholder {
+            width: 100%;
+            height: 700px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -79,15 +76,25 @@
     <div class="content">
         <h2>🚀 About this Dashboard</h2>
         <p>
-            Dive into real-time data visualization powered by <strong>Tableau</strong>! This dashboard provides a clear and intuitive look at our latest analytics. Explore trends, compare regions, and understand your customers better – all at your fingertips. 🔥
+            Dive into real-time data visualization powered by <strong>Tableau</strong>! Explore trends, compare regions, and understand your customers better – all at your fingertips. 🔥
         </p>
 
         <h3>🌐 Interactive Dashboard</h3>
-        <p>
-            Use the interactive dashboard below to filter, drill down, and analyze specific segments. The visualization is powered by Tableau and showcases real-time analytics beautifully.
-        </p>
-
-        <iframe src="https://public.tableau.com/views/Book2_17434108008150/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" allowfullscreen></iframe>
+        <div class='tableauPlaceholder' id='viz1681908478930' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Dashboard' src='https://public.tableau.com/static/images/Book2_17434108008150/Dashboard1/1_rss.png' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Book2_17434108008150/Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+            </object>
+        </div>
 
         <h3>✨ Why Tableau?</h3>
         <ul>
@@ -106,10 +113,11 @@
         Made with ❤️ and 📊 by Your Data Team | Powered by Tableau
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            console.log("Dashboard loaded! Ready to explore ✨");
-        });
+    <script type='text/javascript' src='https://public.tableau.com/javascripts/api/tableau-2.min.js'></script>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1681908478930');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.display = 'block';
     </script>
 </body>
 
