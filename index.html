@@ -40,6 +40,7 @@
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             animation: fadeIn 2s ease-in-out;
+            text-align: center;
         }
 
         @keyframes fadeIn {
@@ -59,10 +60,21 @@
             margin-top: 40px;
         }
 
-        .tableauPlaceholder {
-            width: 100%;
-            height: 700px;
-            margin-top: 20px;
+        .cta-button {
+            background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-top: 30px;
+            transition: 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(90deg, #203a43, #2c5364, #0f2027);
         }
     </style>
 </head>
@@ -79,22 +91,12 @@
             Dive into real-time data visualization powered by <strong>Tableau</strong>! Explore trends, compare regions, and understand your customers better – all at your fingertips. 🔥
         </p>
 
-        <h3>🌐 Interactive Dashboard</h3>
-        <div class='tableauPlaceholder' id='viz1681908478930' style='position: relative'>
-            <noscript>
-                <a href='#'>
-                    <img alt='Dashboard' src='https://public.tableau.com/static/images/Book2_17434108008150/Dashboard1/1_rss.png' />
-                </a>
-            </noscript>
-            <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='Book2_17434108008150/Dashboard1' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-            </object>
-        </div>
+        <h3>🌐 Open Dashboard</h3>
+        <p>Click the button below to view the full interactive dashboard on Tableau Public 🚀</p>
+
+        <a href="https://public.tableau.com/views/Book2_17434108008150/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
+            <button class="cta-button">📊 Open Dashboard</button>
+        </a>
 
         <h3>✨ Why Tableau?</h3>
         <ul>
@@ -105,20 +107,13 @@
 
         <h3>🔎 Explore More</h3>
         <p>
-            Feel free to play around with the filters and interactive elements above. You can hover, click, and filter to find insights that matter to you. 🚀
+            Our dashboard is updated in real-time. Click and explore the data as you wish! 🚀
         </p>
     </div>
 
     <footer>
         Made with ❤️ and 📊 by Your Data Team | Powered by Tableau
     </footer>
-
-    <script type='text/javascript' src='https://public.tableau.com/javascripts/api/tableau-2.min.js'></script>
-    <script type='text/javascript'>
-        var divElement = document.getElementById('viz1681908478930');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        vizElement.style.display = 'block';
-    </script>
 </body>
 
 </html>
