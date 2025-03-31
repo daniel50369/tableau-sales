@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 Data Analytics Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        iframe {
+            width: 100%;
+            height: 700px;
+            border: none;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #203a43;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>📈 Welcome to Our Data Analytics Portal</h1>
+        <p>Your fun & interactive hub for insightful data 📊✨</p>
+    </header>
+
+    <div class="content">
+        <h2>🚀 About this Dashboard</h2>
+        <p>
+            Dive into real-time data visualization powered by <strong>Tableau</strong>! This dashboard provides a clear and intuitive look at our latest analytics. Explore trends, compare regions, and understand your customers better – all at your fingertips. 🔥
+        </p>
+
+        <h3>🌐 Interactive Dashboard</h3>
+        <p>
+            Use the interactive dashboard below to filter, drill down, and analyze specific segments. The visualization is powered by Tableau and showcases real-time analytics beautifully.
+        </p>
+
+        <iframe src="https://public.tableau.com/views/Book2_17434108008150/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" allowfullscreen></iframe>
+
+        <h3>✨ Why Tableau?</h3>
+        <ul>
+            <li>✅ Dynamic & Interactive Data Visualizations</li>
+            <li>✅ Real-time Data Exploration</li>
+            <li>✅ Easy to Use & Accessible</li>
+        </ul>
+
+        <h3>🔎 Explore More</h3>
+        <p>
+            Feel free to play around with the filters and interactive elements above. You can hover, click, and filter to find insights that matter to you. 🚀
+        </p>
+    </div>
+
+    <footer>
+        Made with ❤️ and 📊 by Your Data Team | Powered by Tableau
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("Dashboard loaded! Ready to explore ✨");
+        });
+    </script>
+</body>
+
+</html>
